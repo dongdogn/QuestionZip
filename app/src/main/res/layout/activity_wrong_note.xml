@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wrongnote"
+    android:paddingTop="70dp"
+    tools:context="kr.ac.sogang.cs.hello.wrongNoteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:alpha="0"
+            android:onClick="onUpload"/>
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:alpha="0"
+            android:onClick="pdfprint"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp">
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="2018년도 6월 22번"
+            android:background="#FFFFFF"
+            android:onClick="onWrongQuestion"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:background="#FFFFFF"
+            android:onClick="deleteWQ"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp">
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="2016년도 9월 37번"
+            android:background="#FFFFFF"
+            android:onClick="onWrongQuestion"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:background="#FFFFFF"
+            android:onClick="deleteWQ"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp">
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="2011년도 11월 41번"
+            android:id="@+id/wrong1"
+            android:background="#FFFFFF"
+            android:onClick="onWrongQuestion"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/wrong2"
+            android:background="#FFFFFF"
+            android:onClick="deleteWQ"/>
+    </LinearLayout>
+
+</LinearLayout>
